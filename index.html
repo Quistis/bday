@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>С днём рождения, Януля ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- ФОН С СЕРДЕЧКАМИ -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- ЭКРАН ПОДАРКА -->
+  <div id="giftScreen" class="gift-screen">
+    <div class="gift-box" id="giftBox">
+      🎁
+    </div>
+    <p class="gift-text">💖 Нажми, чтобы открыть подарок, моя маленькая 💖</p>
+  </div>
+
+  <div id="mainContent" class="main hidden">
+    <div class="container">
+
+      <img src="./assets/cake1.png" alt="Януля" class="photo">
+
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
+
+      <button id="surpriseBtn">Нажми сюда 🎁</button>
+
+      <!-- <div id="hiddenMessage" class="hidden">
+        <p>
+          Януля, ты — моё самое любимое чудо 💖<br><br>
+          С тобой всё становится ярче, смешнее и теплее.<br>
+          Я хочу, чтобы ты всегда улыбалась…<br><br>
+          Потому что твоя улыбка — это моё всё ❤️
+        </p>
+      </div> -->
+
+      <div class="story">
+        <p class="story-line hidden">Януля… 💖</p>
+        <p class="story-line hidden">Сегодня особенный день ✨</p>
+        <p class="story-line hidden">Потому что родилась ты 😄</p>
+        <p class="story-line hidden">И с этого момента мир стал лучше</p>
+      </div>
+
+      <!-- <button id="surpriseBtn">Нажми, чтобы узнать дальше 💌</button> -->
+
+      <!-- <div id="hiddenMessage" class="hidden">
+        <p>
+          Ты — самое лучшее, что со мной случилось 💖<br><br>
+          Люблю тебя ❤️
+        </p>
+      </div> -->
+
+    </div>
+  </div>
+
+  <button id="musicToggle" class="music-btn">🔊</button>
+
+  <audio id="bgMusic" loop>
+    <source src="./assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="openSound">
+    <source src="./assets/open-sound.m4a" type="audio/mpeg">
+  </audio>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
